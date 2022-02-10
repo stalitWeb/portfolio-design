@@ -150,19 +150,15 @@ header nav a:hover {
 }
 
 .about h2 {
-    font-size: 40PX;
-    /* background: royalblue; */
+    font-size: 5px;
     box-shadow: 3px 3px #fff;
     padding:0 0 20px 5px;
+    color: #fff;
     /* padding-left: 10px; */
 }
 
 .about h2, .about p, .about button {
     margin-bottom: 30px;
-}
-
-.about h2  {
-    color: #fff;
 }
 
 .about button{
@@ -174,8 +170,7 @@ header nav a:hover {
    margin-right: 20px;
 }
 
-.about button a{
-    background: transparent;
+.about  a{
     color: #000;
     text-decoration: none;
  }
@@ -202,7 +197,7 @@ header nav a:hover {
 }
 
 .skills .progressive-bar-wrapper {
-    min-height: 50px;
+    min-height: 30px;
 }
 
 
@@ -864,18 +859,20 @@ footer {
     }
 
     header nav ul li{
-        padding: 5px;
+        padding: 5px 3px;
         /* margin: 5px; */
     }
 
     .main-header nav{
-        padding: 2px;
+        padding: 2px 0;
         margin: 0px;
+        box-sizing: border-box;
     }
 
     .main-header nav a {
         /* justify-content: center; */
-        font: menu !important;
+        font-size: 10px !important;
+        font-size: bold !important;
     }
 
     .about {
@@ -905,6 +902,10 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .inner-section {
+        padding: 20px 20px;
+    }
+
     /* .icon-box {
         padding: 15px;
         border-radius: 10px;
@@ -922,6 +923,7 @@ footer {
         margin-bottom: 20px;
         background-size: cover !important;
         background-position: center !important;
+        object-fit: cover;
     }
 
     .portfolio .grid {

@@ -22,7 +22,7 @@ function inCrementSkillCount (item, value, ind) {
     skillCount = skillCount + 1
     item.innerHTML = `${skillCount}%`
     progressiveBar[ind].style.width = `${skillCount}%`
-    progressiveBar[ind].style.height = `${"50px"}`
+    progressiveBar[ind].style.height = `${"30px"}`
 
 
 }
