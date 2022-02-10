@@ -150,7 +150,7 @@ header nav a:hover {
 }
 
 .about h2 {
-    font-size: 5px;
+    font-size: 40px;
     box-shadow: 3px 3px #fff;
     padding:0 0 20px 5px;
     color: #fff;
@@ -354,7 +354,7 @@ header nav a:hover {
     width: 100%;
 }
 
-.portfolio .gallery div:nth-child(3){
+.portfolio .gallery .gallery-box:nth-child(3){
     background: url("/src/img/bg4.jpg");
     background-repeat: no-repeat;
     background-position-x: 20%;
@@ -362,7 +362,7 @@ header nav a:hover {
     background-size: cover;
 }
 
-.portfolio .gallery div:nth-child(4){
+.portfolio .gallery .gallery-box:nth-child(4){
     background: url("/src/img/bg5.jpg");
     background-repeat: no-repeat;
     background-position-x: 5%;
@@ -371,7 +371,7 @@ header nav a:hover {
     background-size: cover;
 }
 
-.portfolio .gallery div:nth-child(5){
+.portfolio .gallery .gallery-box:nth-child(5){
     background: url("/src/img/bg6.jpg");
     background-repeat: no-repeat;
     background-position-x: 15%;
@@ -380,7 +380,7 @@ header nav a:hover {
     background-size: cover;
 }
 
-.portfolio .gallery div:nth-child(6) {
+.portfolio .gallery .gallery-box:nth-child(6) {
     background: url("/src/img/bg7.jpg");
     background-repeat: no-repeat;
     background-position-x: -0%;
@@ -420,14 +420,24 @@ header nav a:hover {
     transform: translateY(500%);
 }
 
+.portfolio .gallery-link-wrapper{
+    display: flex;
+}
+
+.portfolio .gallery-link-wrapper a{
+    text-decoration: none;
+}
+
 .portfolio .gallery-link{
     margin-right: 10px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgba(255, 166, 0, 0.877) !important;
-    padding: 10px 10px;
+    padding: 11px 14px;
     border-radius: 100%;
-    width: 50px; 
-    height: 50px; 
+    width: 55px; 
+    height: 55px; 
 }
 
 .portfolio .gallery-box:hover .gallery-box-overlay{
@@ -745,7 +755,7 @@ footer {
     }
 
     .about h2 {
-        font-size: 40PX;
+        font-size: 35px !important;
         /* background: royalblue; */
         box-shadow: 0 0px 5px #fff;
         padding: 10px 0;
@@ -848,6 +858,10 @@ footer {
         font-size: 15px;
     }
 
+    .inner-section {
+        padding: 20px 20px;
+    }
+
     i {
         font-size: 35px !important;
     }
@@ -875,8 +889,16 @@ footer {
         font-size: bold !important;
     }
 
+    .showcase {
+        padding:20px !important;
+    }
+
     .about {
         text-align: center;
+    }
+
+    .about .container {
+        padding: 0 20px;
     }
 
 
@@ -902,9 +924,7 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .inner-section {
-        padding: 20px 20px;
-    }
+
 
     /* .icon-box {
         padding: 15px;
