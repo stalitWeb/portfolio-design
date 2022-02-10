@@ -1,42 +1,46 @@
+try {
 
-let skillCount = 0;
-let progressiveBar = document.querySelectorAll(".progressive-bar")
+    let skillCounter = 0;
+    let progressiveBar = document.querySelectorAll(".progressive-bar")
 
-function loadSkillCount() {
-    let progressiveCounts = document.querySelectorAll(".progressive-count")
+    function loadSkillCounter() {
+        let progressiveCounts = document.querySelectorAll(".progressive-count")
 
-    progressiveCounts.forEach(function(item, ind) {
-        inCrementSkillCount(item, +item.dataset.value, ind)
+        progressiveCounts.forEach(function (item, ind) {
+            inCrementSkillCounter(item, +item.dataset.value, ind)
+        })
+    }
+
+    function inCrementSkillCounter(item, value, ind) {
+
+        if (skillCounter > value) {
+
+            // loadSkillCounter()
+            return
+        }
+        console.log(value)
+
+        skillCounter = skillCounter + 1
+        item.innerHTML = `${skillCounter}%`
+        progressiveBar[ind].style.width = `${skillCounter}%`
+        progressiveBar[ind].style.height = `${"35px"}`
+
+
+    }
+
+    window.addEventListener("scroll", function (e) {
+
+        if (window.scrollY >= 1030 && window.scrollY <= 1300) {
+
+            // console.log(true) 
+            setInterval(() => loadSkillCounter(), 200)
+        }
+        // console.log(false) 
+
+
     })
+} catch (error) {
+    console.log(error)
 }
 
-function inCrementSkillCount (item, value, ind) {
-
-    if ( skillCount > value ) {
-       
-        // loadSkillCount()
-        return 
-    }
-    console.log(value)
-
-    skillCount = skillCount + 1
-    item.innerHTML = `${skillCount}%`
-    progressiveBar[ind].style.width = `${skillCount}%`
-    progressiveBar[ind].style.height = `${"30px"}`
-
-
-}
-
-window.addEventListener("scroll", function(e){ 
-
-    if (window.scrollY >= 1030 && window.scrollY <= 1300 ) {
-
-        // console.log(true) 
-        setInterval(()=>loadSkillCount(), 500)
-    }
-    // console.log(false) 
-    
-
-})
-
-// setInterval(()=>loadSkillCount(), 50) 
+// setInterval(()=>loadSkillCounter(), 50) 
