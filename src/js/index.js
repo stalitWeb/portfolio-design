@@ -29,7 +29,7 @@ function inCrementSkillCount (item, value, ind) {
 
 window.addEventListener("scroll", function(e){ 
 
-    if (window.scrollY >= 1050 && window.scrollY <= 1300 ) {
+    if (window.scrollY >= 1030 && window.scrollY <= 1300 ) {
 
         // console.log(true) 
         setInterval(()=>loadSkillCount(), 500)

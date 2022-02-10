@@ -21,7 +21,9 @@ img {
 
 .hidden {
     visibility: hidden;
-    height: 0;
+    max-height: 0px;
+    background: #000;
+    overflow: hidden;
 }
 
 /* header */
@@ -171,6 +173,12 @@ header nav a:hover {
    font-weight: bold;
    margin-right: 20px;
 }
+
+.about button a{
+    background: transparent;
+    color: #000;
+    text-decoration: none;
+ }
 
 .about button:hover{
     background: chartreuse;
@@ -799,7 +807,7 @@ footer {
     }
 
     .portfolio .grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .portfolio .gallery-box {
@@ -815,6 +823,10 @@ footer {
 
     .testimonials span {
        font-size: 14px !important;
+    }
+
+    .contact .grid {
+        align-items: flex-start;
     }
 
     .contact i, .contact h4 {
