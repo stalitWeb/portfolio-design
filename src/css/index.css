@@ -805,7 +805,7 @@ footer {
 
     .main-header nav li:hover {
         /* justify-content: center; */
-        background: rgba(128, 255, 0, 0.719);
+        background: rgba(128, 255, 0, 0.493);
         color: #fff;
     }
 
@@ -1031,7 +1031,7 @@ footer {
 
     .main-header nav li:hover {
         /* justify-content: center; */
-        background: rgba(128, 255, 0, 0.719);
+        background: rgba(128, 255, 0, 0.493);
         color: #fff;
     }
 
@@ -1098,9 +1098,10 @@ footer {
         padding: 0;
         min-height: 200px;
         margin-bottom: 20px;
-        background-size: cover !important;
+        background-size: contain !important;
         background-position: center !important;
         object-fit: cover;
+        box-shadow: 0 0 3px  rgba(255, 255, 255, 0.664);
     }
 
     .portfolio .grid {
@@ -1124,6 +1125,10 @@ footer {
 
     .contact i, .contact h4 {
         font-size: 15px !important;
+    }
+
+    .contact h2 {
+        padding-bottom: 30px;
     }
 
     .contact input {
