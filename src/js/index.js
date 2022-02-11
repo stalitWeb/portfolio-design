@@ -1,7 +1,12 @@
 try {
 
-    let skillCounter = 0;
+    // UIElement
+    let toggleBar  = document.querySelector('.toggle-bar')
+    let navBar = document.querySelector('.nav-bar')
     let progressiveBar = document.querySelectorAll(".progressive-bar")
+
+    //Static variable
+    let skillCounter = 0;
 
     function loadSkillCounter() {
         let progressiveCounts = document.querySelectorAll(".progressive-count")
@@ -33,12 +38,15 @@ try {
         if (window.scrollY >= 1030 && window.scrollY <= 1300) {
 
             // console.log(true) 
-            setInterval(() => loadSkillCounter(), 200)
+            setInterval(() => loadSkillCounter(), 150)
         }
         // console.log(false) 
 
 
     })
+
+    toggleBar.addEventListener('click', (e)=>onHangleToggleBar(e, navBar))
+
 } catch (error) {
     console.log(error)
 }
